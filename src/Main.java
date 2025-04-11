@@ -26,9 +26,7 @@ public class Main {
         System.out.println("\n Displaying all grades:");
         gm.displayGrades();
 
-        System.out.print("\n Enter a grade to remove: ");
-        int gradeToRemove = scanner.nextInt();
-        gm.removeGrade(gradeToRemove);
+
 
         System.out.print("\n Enter index of grade to update: ");
         int index = scanner.nextInt();
@@ -49,6 +47,9 @@ public class Main {
         gm.calculateAverage();
         gm.highestAndLowest();
 
+        System.out.print("\n Enter a grade to remove: ");
+        int gradeToRemove = scanner.nextInt();
+        gm.removeGrade(gradeToRemove);
         scanner.close();
     }
 }
